@@ -142,6 +142,16 @@ body {
   width: 113px;
 }
 
+.section-playlist__content .section-playlist__buttom:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.section-playlist__content .section-playlist__buttom:active{
+  transform: scale(1);
+  transition: 10ms;
+}
+
 .sidebar .cookies{
   margin: 25px 20px;
 }

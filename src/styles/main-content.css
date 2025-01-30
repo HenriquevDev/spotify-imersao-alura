@@ -82,6 +82,15 @@
     background-color: transparent;
     margin-right: 32px;
   }
+
+  .header__login .subscribe:hover {
+    transition: 0.3s;
+    background: linear-gradient(to right, #2c0275, #c08bfd);
+    height: 48px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 40px;
+  }
   
   .header__login .login {
     width: 100px;
@@ -90,6 +99,11 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+  }
+
+  .header__login .login:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
   }
 
   .container-playlist{
@@ -161,6 +175,11 @@
   color: #fff;
   font-size: 24px;
   font-weight: 700;
+}
+
+.cards:active{
+  transform: scale(0.95);
+  transition: 30ms;
 }
 
 
