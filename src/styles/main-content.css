@@ -84,7 +84,8 @@
   }
 
   .header__login .subscribe:hover {
-    transition: 0.3s;
+    transition: 100ms;
+    transform: ease;
     background: linear-gradient(to right, #2c0275, #c08bfd);
     height: 48px;
     color: #fff;
@@ -104,6 +105,11 @@
   .header__login .login:hover{
     transform: scale(1.1);
     transition: 0.3s;
+  }
+
+  .header__login .login:active{
+    transform: scale(1);
+    transition: 10ms;
   }
 
   .container-playlist{
