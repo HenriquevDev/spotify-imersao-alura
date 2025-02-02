@@ -6,7 +6,7 @@ function requestApi(searchTerm){
     const url = `http://localhost:3000/artists?name_like=${searchTerm}`
     fetch(url)
         .then((response) => response.json())
-        .then((result) => displayResults(result))
+        .then((result) => displayResults(result, searchTerm))
 }
 
 function displayResults(result){
@@ -27,10 +27,12 @@ function displayResults(result){
 document.addEventListener('input', function() {
     const searchTerm = searchInput.value.toLowerCase();
     if (searchTerm === '') {
-        resultPlaylist.classList.add('hidden');
-        resultsArtist.classList.remove('hidden');
+        resultPlaylist.classList.remove('hidden');
+        resultsArtist.classList.add('hidden');
         return
     }
 
     requestApi(searchTerm);
 })
+
+//json-server --watch api-artists/artists.json --port 4000
